@@ -30,6 +30,11 @@ public class BancoDados {
         System.out.println("[OK] Pessoa removida: " + removida);
     }
 
+    //Busca uma pessoa pelo id (e retorna null se não encontrar)
+    public Pessoa buscar(int id) {
+        return pessoas.get(id);
+    }
+
     //Retorna todas as pessoas cadastradas
     public Map<Integer, Pessoa> listarTodos() {
         return pessoas;
